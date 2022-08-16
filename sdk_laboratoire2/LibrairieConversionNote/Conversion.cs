@@ -18,26 +18,26 @@ namespace LibrairieConversionNote
             //On mets toutes les valeurs passées en majuscules
             switch (str.ToUpperInvariant())
             {
-                case "A":
-                    strReturnValue = "LA";
+                case "LA":
+                    strReturnValue = "A";
                     break;
-                case "B":
-                    strReturnValue = "SI";
+                case "SI":
+                    strReturnValue = "B";
                     break;
-                case "C":
-                    strReturnValue = "DO";
+                case "DO":
+                    strReturnValue = "C";
                     break;
-                case "D":
-                    strReturnValue = "RE";
+                case "RE":
+                    strReturnValue = "D";
                     break;
-                case "E":
-                    strReturnValue = "MI";
+                case "MI":
+                    strReturnValue = "E";
                     break;
-                case "F":
-                    strReturnValue = "FA";
+                case "FA":
+                    strReturnValue = "F";
                     break;
-                case "G":
-                    strReturnValue = "SOL";
+                case "SOL":
+                    strReturnValue = "G";
                     break;
                 default: //Valeur n'est pas dans la liste du haut
                     strReturnValue = "La note n'existe pas";
