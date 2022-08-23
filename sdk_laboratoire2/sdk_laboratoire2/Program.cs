@@ -11,7 +11,7 @@ while (true)
     var input = Console.ReadLine();
 
     //Si l'utilisateur tape note
-    if (input?.ToUpperInvariant() == "NOTE")
+    if (input?.ToUpperInvariant() == "ALPHA")
     {
         //On demande en boucle la conversion 
         while (true)
@@ -24,7 +24,7 @@ while (true)
         }
     }
     //Si l'utilisateur tape alpha
-    else if (input?.ToUpperInvariant() == "ALPHA")
+    else if (input?.ToUpperInvariant() == "NOTE")
     {
         while (true)
         {
