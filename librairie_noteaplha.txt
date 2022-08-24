@@ -1,4 +1,4 @@
-﻿//Notre librairie
+//Notre librairie
 namespace LibrairieConversionNote
 {
     /// <summary>
