@@ -30,10 +30,10 @@ while (true)
         {
             Console.Write("Conversion à faire : ");
             var note = Console.ReadLine();
-            var noteRetour = "Je ne suis pas implémentée"; //Mettre votre appel ici;
+            var noteRetour = conversionObj.NoteToAlpha(note);
             Console.Write(noteRetour);
             Console.WriteLine();
         }
     }
 }
-// aucun changement - Reprise pour screenshot
+// Changement - 1.3.	Implémentation d’une nouvelle fonctionnalité - ALPHA
