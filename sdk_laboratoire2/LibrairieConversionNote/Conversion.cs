@@ -1,61 +1,41 @@
-﻿//Notre librairie
-namespace LibrairieConversionNote
-{
-    /// <summary>
-    /// Classe de conversion
-    /// </summary>
-    public class Conversion
-    {
-        /// <summary>
-        /// Retourne la note du alphanumerique
-        /// </summary>
-        /// <param name="str">La note alphanumerique</param>
-        /// <returns></returns>
-        public string AlphaToNote(string str)
-        {
-            //variable de retour
-            string strReturnValue = string.Empty;
-            //On mets toutes les valeurs passées en majuscules
-            switch (str.ToUpperInvariant())
-            {
-                case "A":
-                    strReturnValue = "LA";
-                    break;
-                case "B":
-                    strReturnValue = "SI";
-                    break;
-                case "C":
-                    strReturnValue = "DO";
-                    break;
-                case "D":
-                    strReturnValue = "RE";
-                    break;
-                case "E":
-                    strReturnValue = "MI";
-                    break;
-                case "F":
-                    strReturnValue = "FA";
-                    break;
-                case "G":
-                    strReturnValue = "SOL";
-                    break;
-                default: //Valeur n'est pas dans la liste du haut
-                    strReturnValue = "La note n'existe pas";
-                    break;
-            }
-            //Retourne la valeur
-            return strReturnValue;
-        }
+///« ALPHA» => Note vers alphabétique
 
-        /// <summary>
-        /// Retourne l'alphanumerique de la note
-        /// </summary>
-        /// <param name="str">La note musicale</param>
-        /// <returns></returns>
-        public string NoteToAlpha(string str)
-        {
-            string strReturnValue = string.Empty;
-            return strReturnValue;
+﻿namespace LibrairieConversionNote
+{
+    public class ConversionAlphabetiqueToNote
+    {
+        public string Transformer(string Alpha) { 
+        
+if (Alpha == "LA")
+
+            {
+             return "A"; 
+            }
+if (Alpha == "SI")
+            {
+                return "B";
+            }
+if (Alpha == "DO")
+            {
+                return "C";
+            }
+if (Alpha == "RE")
+            {
+                return "D";
+            }
+if (Alpha == "MI")
+            {
+                return "E";
+            }
+if (Alpha == "FA")
+            {
+                return "F";
+            }
+if (Alpha == "SOL")
+            {
+                return "G";
+            }
+else return "Erreur, entrer une Note LA,SI,DO,RE,MI,FA ou SOL";
         }
     }
 }
